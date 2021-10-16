@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body{
+    font-family: Open Sans, sans-serif;
+}
+.logo img{
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 10px;
+    size: 50px;
+}
+.logo a{
+    width: 100px;
+    display: block;
+    padding:20px;
+    
+}
+
+
+
+*{
+    padding:0;
+    margin: 0;
+    border:0;
+    list-style: none;
+}
+.navbrand img{
+    width: 20px;
+    background-color: black;
+}
+a{
+    text-decoration: none;
+}
+
+ul.menu{
+    background-color: none  ;
+    height: 50px;
+    margin-right: 25px;
+}
+
+ul.menu > li{
+    float: right;
+    height: 50px;
+    position: relative;
+}
+
+ul.menu >li >a {
+    display: block;
+    font-size:17px;
+    padding:0 15px;
+    line-height: 50px;
+    color:black;
+    font-weight: Semi-bold 600;
+}
+ul.menu ul {
+    background-color: none;
+    width: 200px;
+    position: absolute;
+    top:30px;
+    left: 0;
+    opacity: 0;
+    transition:250ms all ;
+    visibility: hidden;
+}
+ul.menu ul li a {
+    display: block;
+    padding: 7px 12px;
+    color: black;
+    border:  solid 1px black;
+}
+ul.menu >li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    top: 50px;
+}
+
+label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+#toggle {
+    display: none;
+}
+
+@media only screen and (max-width: 765px) {
+    label {
+        display: block;
+        cursor: pointer;
+    }
+    ul.menu li {
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column; ;
+        opacity: 0;
+        
+    }
+    ul.menu li a {
+        
+        border-bottom: 1px solid #EAEAEB;
+        margin: 0;
+     
+    }
+    #toggle:checked + ul.menu li{
+        opacity: 1;
+        transition: 150mx ease;
+    }
+    
+}
+
+
