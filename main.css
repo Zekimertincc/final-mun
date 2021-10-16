@@ -75,7 +75,7 @@ ul.menu ul {
     top:30px;
     left: 0;
     opacity: 0;
-    transition:250ms all ;
+    transition:400ms all ;
     visibility: hidden;
 }
 ul.menu ul li a {
