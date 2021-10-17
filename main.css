@@ -187,6 +187,9 @@ footer{
     .üst-yazı{
         display: none;
     }
+    p.main{
+        width: auto;
+    }
 }
 
 
