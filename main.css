@@ -45,6 +45,7 @@ body{
     width: auto;
     background-color: black;
 }
+
 a{
     text-decoration: none;
 }
@@ -68,6 +69,8 @@ ul.menu >li >a {
     line-height: 50px;
     color:white;
     font-weight: Semi-bold 600;
+    font-family: Montserrat,open-sans;
+    margin-top:10px ;
 }
 ul.menu ul {
     background-color: none;
