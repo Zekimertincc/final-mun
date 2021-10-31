@@ -24,6 +24,9 @@ body{
     margin: 0;
     border:0;
     list-style: none;
+
+    width: auto important!;
+
 }
 
 .yukarısı  {
@@ -140,6 +143,7 @@ div.main{
   display: flex;
   justify-content: center;
   align-items: center;
+  width: auto;
   
 }
 
@@ -286,7 +290,8 @@ footer{
 
 
 @media only screen and (max-width: 765px) {
-    label {
+
+  label {
         display: block;
         cursor: pointer;
     }
@@ -314,6 +319,8 @@ footer{
     p.main{
         width: auto;
     }
+
 }
+
 
 
